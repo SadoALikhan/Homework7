@@ -24,12 +24,11 @@ public class Main {
 
         System.out.println("Задание 3:");
         int people = 12_000_000;
-        int totalPeople = 0;
         int year = 0;
         while (year < 10) {
             year++;
-            totalPeople = people + (17 * (totalPeople/1000) - 8 * (totalPeople/1000)) * year;
-            System.out.println("Год " + year + ", численность населения составляет " + totalPeople);
+            people = people + (17 * (people/1000) - 8 * (people/1000));
+            System.out.println("Год " + year + ", численность населения составляет " + people);
         }
 
         System.out.println("Задание 4 ");
